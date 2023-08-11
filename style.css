@@ -10,6 +10,7 @@
 
 body {
 background: var(--bg-url) no-repeat top center/cover;
+height: 100vh;
 }
 
 * {
@@ -49,8 +50,6 @@ body * {
     max-width: 588px;
     margin: 56px auto 0px;
     padding: 0 24px;
-
-    margin-top: 56px;
 }
 
 #profile {
@@ -59,9 +58,7 @@ body * {
 }
 
 #profile img {
-    display: inline-block;
     width: 112px;
-    margin: auto;
 }
 
 #profile p {
@@ -77,7 +74,7 @@ body * {
     position: relative;
     width: 64px;
 
-    margin: 0 auto;
+    margin: 4px auto;
 }
 
 #switch button {
@@ -94,7 +91,6 @@ body * {
     transform: translateY(-50%);
 
     animation: slide-back 0.2s;
-    transition: left 0.3s;
 }
 
 .light #switch button {
@@ -133,7 +129,7 @@ ul li a {
 
     padding: 16px 24px;
 
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--surface-color);
     border: 1px solid var(--stroke-color);
     border-radius: 8px;
 
